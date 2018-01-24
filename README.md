@@ -45,3 +45,39 @@ init.bat
 
 `provider: virtualbox`
 
+## Default File Homestead.yml (MacOS)
+```
+---
+ip: "192.168.10.10"
+memory: 2048
+cpus: 1
+provider: virtualbox
+
+authorize: ~/.ssh/id_rsa.pub
+
+keys:
+    - ~/.ssh/id_rsa
+
+folders:
+    - map: ~/Laravel_Project
+      to: /home/vagrant/code
+
+sites:
+    - map: planyfood.test
+      to: /home/vagrant/code/planyfood-app/public
+
+databases:
+    - homestead
+
+# blackfire:
+#     - id: foo
+#       token: bar
+#       client-id: foo
+#       client-token: bar
+
+# ports:
+#     - send: 50000
+#       to: 5000
+#     - send: 7777
+#       to: 777
+#       protocol: udp
