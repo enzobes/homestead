@@ -23,7 +23,7 @@ Download [Vagrant](https://www.vagrantup.com/)
  
  `vagrant box add laravel/homestead`
 
-- Installing Homestead 
+- Installing [Homestead](https://laravel.com/docs/5.5/homestead)
 
 ```
 git clone https://github.com/laravel/homestead.git ~/Homestead
